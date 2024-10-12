@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: bookmyshow
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: my_password
+    ports:
+      - "6900:5432"
